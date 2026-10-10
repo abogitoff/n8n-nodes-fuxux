@@ -1,0 +1,60 @@
+{
+	"name": "n8n-nodes-fuxux",
+	"version": "0.1.0",
+	"description": "Schedule and publish social media posts with Fuxux from n8n: Instagram, TikTok, YouTube, LinkedIn, X, Facebook, Threads, Bluesky, Pinterest, Discord, Kick and Twitch.",
+	"license": "MIT",
+	"homepage": "https://www.fuxux.com",
+	"keywords": [
+		"n8n-community-node-package",
+		"fuxux",
+		"social media",
+		"social media scheduler",
+		"scheduling",
+		"instagram",
+		"tiktok",
+		"linkedin",
+		"youtube"
+	],
+	"author": {
+		"name": "Fuxux",
+		"email": "support@fuxux.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/abogitoff/n8n-nodes-fuxux.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"test": "npm run build && node --test test/fuxux.test.js",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/FuxuxApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Fuxux/Fuxux.node.js",
+			"dist/nodes/Fuxux/FuxuxTrigger.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "*",
+		"eslint": "9.39.4",
+		"prettier": "3.8.3",
+		"release-it": "20.2.0",
+		"typescript": "5.9.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}

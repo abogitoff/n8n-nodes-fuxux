@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-fuxux.fuxux",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Marketing & Content", "Communication"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://github.com/abogitoff/n8n-nodes-fuxux?tab=readme-ov-file#credentials"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/abogitoff/n8n-nodes-fuxux?tab=readme-ov-file"
+			}
+		]
+	}
+}
